@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-24T04:34:51.173Z",
+  "not_a_model_benchmark": true,
+  "resource": "ci-matrix-cover",
+  "example": "combined job beats separate",
+  "input": {
+    "requirements": [
+      "linux",
+      "win"
+    ],
+    "jobs": [
+      {
+        "id": "a",
+        "cost": 4,
+        "covers": [
+          "linux"
+        ]
+      },
+      {
+        "id": "b",
+        "cost": 4,
+        "covers": [
+          "win"
+        ]
+      },
+      {
+        "id": "c",
+        "cost": 6,
+        "covers": [
+          "linux",
+          "win"
+        ]
+      }
+    ]
+  },
+  "metric": "declared CI job cost units with all stated coverage preserved",
+  "baseline": {
+    "algorithm": "run all declared jobs",
+    "cost": 14,
+    "covered": 2
+  },
+  "candidate": {
+    "algorithm": "exact minimum-cost set cover",
+    "cost": 6,
+    "covered": 2,
+    "full_result": {
+      "feasible": true,
+      "selected": [
+        "c"
+      ],
+      "total_cost": 6,
+      "missing": [],
+      "budget_exceeded": false,
+      "optimal": true,
+      "summary": {
+        "selected": 1,
+        "cost": 6,
+        "covered": 2
+      }
+    }
+  },
+  "absolute_reduction": 8,
+  "relative_reduction": 0.5714285714285714,
+  "scope": "Coverage is the supplied declarative requirement set; no claim of equivalent real test behavior, runner speed or cloud-bill savings."
+}

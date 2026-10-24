@@ -16,7 +16,7 @@ Problem: 필수 환경·기능의 검증 범위를 전부 덮는 최소 비용 C
 
 1. Same functionality already exists? Yes, underlying domain operations are established. An existing tool configured for this exact task may remove the need for a separate project.
 2. Existing configuration enough? Plausibly; no exhaustive plugin/configuration execution was completed. Check the nearest tool before expanding this prototype.
-3. Another name? Search terms include Minimum-cost CI matrix; ci matrix cover; 필수 환경·기능의 검증 범위를 전부 덮는 최소 비용 CI 작업 조합을 찾는다.; or-tools; github-matrix. Existing algorithm names appear in the method above.
+3. Another name? Search terms include CI matrix minimum cost set cover platform requirements 테스트 조합. Existing algorithm names appear in the method above.
 4. Important user difference? Fewer runtime dependencies and a validated tool boundary are concrete; actual adoption and time savings remain unmeasured.
 5. Added complexity? Structured JSON is a real setup cost. A browser example and exact field errors reduce it, but do not erase it.
 6. Retraction evidence? An existing setup with the same access/contract or a failed invariant/performance comparison removes the claimed practical advantage.
