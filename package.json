@@ -1,0 +1,14 @@
+{
+  "name": "@proofnova/ci-matrix-cover",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Minimum-cost CI matrix",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test.mjs",
+    "example": "node cli.mjs example.json"
+  }
+}
